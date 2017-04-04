@@ -50,6 +50,8 @@ void loop() {
   byte historyIndex = (second());  // test dataset index
   byte x = 0;
   
+  historicTopVoltage = 6.0;
+
   voltageHistory[historyIndex] = analogRead(VOLTAGEPIN);
   inputVoltage=voltageHistory[historyIndex]*voltageAbsMax/1024;  
 
